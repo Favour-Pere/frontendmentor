@@ -1,52 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
   <title>Frontend Mentor | Contact form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+
+      font-size: 11px;
+      text-align: end;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <div class="card">
+    <h2>Contact Us</h2>
+    <div class="flex">
 
-  Contact Us
+      <div>
+        <label for="">First Name <span>*</span></label>
+        <input type="text" />
+      </div>
 
-  First Name
-  This field is required
+      <div>
+        <label for="">Last Name <span>*</span></label>
+        <input type="text" />
+      </div>
+    </div>
 
-  Last Name
-  This field is required
+    <div>
+      <label for="">Email Address <span>*</span></label>
+      <input type="text">
+    </div>
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+    <div>
+      <label>Query Type <span>*</span></label>
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+      <div class="flex">
 
-  Message
-  This field is required
+        <div class="box">
+          <input type="radio" name="" id="">
+          <p>General Enquiry</p>
+        </div>
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
+        <div class="box">
+          <input type="radio">
+          <p for="">Support Request</p>
+        </div>
 
-  Submit
+      </div>
+    </div>
 
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
+    <div>
+      <label for="">Message <span>*</span></label>
+      <input type="text" class="message">
+    </div>
+
+    <div>
+      <input type="checkbox">
+      <p>I consent to being contacted by the team</p>
+    </div>
+
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </div>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Robert-Wilson Peremobowei Favour</a>.
   </div>
 </body>
+
 </html>
